@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #000000;
+    margin: 2rem;
+    overflow-x: hidden; 
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.menu {
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+    padding: 10px 2rem;
+    text-transform: uppercase;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(187, 250, 255);
+    transition: .5s;
+}
+
+#menu { display: none; }
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.menu label svg {
+    width: 30px;
+    height: 30px;
+    color: rgb(148, 232, 238);
+}
+
+
+.information {
+    width: 100%; 
+    margin-top: 5rem;
+    padding: 20px 0;
+}
+
+.information-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.information-txt {
+    flex-basis: 35%;
+}
+
+.information-box {
+    flex-basis: 65%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card-1 {
+    flex: 1 1 calc(50% - 15px);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px; 
+    cursor: pointer; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-1:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.3); 
+}
+
+.card-1 img {
+    width: 45px;
+    margin: 0 auto 15px auto; 
+}
+
+.card-1 h3 {
+    color: #000000;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.card-1 p {
+    color: #333333;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.card-1 span {
+    color: rgb(0, 0, 0);
+    font-family: Impact, sans-serif;
+    font-size: 18px;
+}
+
+
+h1 { color: rgb(255, 0, 0); font-size: 50px; line-height: 1; margin-bottom: 20px; }
+h2 { color: rgb(156, 255, 255); font-size: 35px; margin-bottom: 20px; }
+p { color: #ffffff; font-size: 18px; margin-top: 15px; }
+
+.btn-1 {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: rgb(170, 251, 255);
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 40px;
+    margin-top: 20px;
+    transition: .4s;
+}
+
+.btn-1:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+
+.header-container { padding: 50px 0; }
+.general { padding: 60px 0; }
+.general-content-container { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.general-img, .general-txt { flex-basis: 50%; }
+
+.app { padding: 60px 0; }
+.app-container { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.app-img, .app-txt { flex-basis: 50%; }
+.app-icons img { width: 80px; margin-right: 15px; margin-top: 15px; }
+
+.contact { padding: 60px 0; text-align: center; }
+
+
+.podcast-floating-card {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 320px;
+    background-color: #111111;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    padding: 12px;
+    z-index: 9999;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-controls { display: flex; justify-content: flex-end; gap: 6px; margin-bottom: 8px; }
+
+.control-btn {
+    background: #222222;
+    color: #ffffff;
+    border: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.control-btn:hover { background: #ff0000; }
+
+.podcast-card-content { transition: max-height 0.3s ease, opacity 0.3s ease; max-height: 380px; opacity: 1; }
+.podcast-media-group { display: flex; flex-direction: column; gap: 10px; }
+
+.podcast-custom-cover { width: 100%; height: 140px; border-radius: 10px; overflow: hidden; }
+.podcast-custom-cover img { width: 100%; height: 100%; object-fit: cover; }
+
+
+.podcast-floating-card.minimized { width: 120px; }
+.podcast-floating-card.minimized .podcast-card-content { max-height: 0; opacity: 0; pointer-events: none; }
+
+
+@media(max-width:991px) {
+    .menu label { display: initial; }
+    .menu .navbar {
+        position: absolute; top: 50px; left: 0; right: 0;
+        background-color: rgb(255, 0, 0); display: none;
+    }
+    .menu .navbar ul li { width: 100%; }
+    #menu:checked ~ .navbar { display: initial; }
+    
+    .information-content, .general-content-container, .app-container, .footer-content {
+        flex-direction: column; text-align: center;
+    }
+    .information-box { justify-content: center; }
+    .card-1 { flex-basis: 100%; }
+    .podcast-floating-card { width: 85%; left: 7.5%; bottom: 15px; }
+}
+
+.general-txt p {
+    padding: 2%;
+}
+
+.chapters-container {
+    padding: 20px 0 50px 0;
+    position: relative;
+}
+
+.chapters-carousel {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 20px 10px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; 
+}
+
+.chapters-carousel::-webkit-scrollbar {
+    display: none; 
+}
+
+
+.card-hatsu {
+    flex: 0 0 320px; 
+    height: 420px;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    scroll-snap-align: start;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+}
+
+.card-hatsu:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(156, 255, 255, 0.15);
+}
+
+.card-hatsu-content {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #ffffff;
+    z-index: 2;
+    max-width: 85%;
+}
+
+.card-hatsu-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+    text-transform: none; 
+}
+
+.card-hatsu-content p {
+    font-size: 13.5px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+.hatsu-add-btn {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hatsu-add-btn svg {
+    width: 20px;
+    height: 20px;
+    color: #000000;
+}
+
+.hatsu-add-btn:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+
+.card-hatsu-more {
+    flex: 0 0 280px;
+    height: 420px;
+    background-color: #ffffff;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    scroll-snap-align: start;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-more-content h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.hatsu-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.hatsu-more-btn:hover {
+    background-color: #ff0000; 
+}
+
+.hatsu-more-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.carousel-progress-bar {
+    width: 140px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 30px auto 0 auto;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.carousel-progress-fill {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(156, 255, 255);
+    border-radius: 2px;
+}
+
+.general-txt p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer {
+    background: #111; 
+    padding: 5rem 9%;
+    border-top: .2rem solid #a9f9ff;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #aaa;
+    line-height: 2;
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.footer .box-container .box a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    transition: .3s ease;
+}
+
+.footer .box-container .box a:hover {
+    color: #a9f9ff;
+    padding-left: 1rem; 
+}
+
+.footer .box-container .box a i,
+.footer .box-container .box a svg {
+    width: 2rem !important;
+    height: 2rem !important;
+    color: #ffd8a9;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
+    border-top: .1rem solid rgba(255,255,255,.1);
+}
+
+.footer .credit span {
+    color: #a9f9ff;
+    text-shadow: 0 0 1rem rgba(169, 249, 255, 0.5); 
+}

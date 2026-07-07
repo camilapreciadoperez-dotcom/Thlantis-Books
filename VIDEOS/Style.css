@@ -1,0 +1,449 @@
+* {
+   font-family: sans-serif;
+   text-transform: capitalize;
+   text-decoration: none;
+   outline: none;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #86e9ff;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #2e2e2e;
+}
+
+.heading {
+    font-size: 4rem;
+    color: #a9f9ff;
+    text-align: center;
+    padding: 6rem 1rem 0 0;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.title {
+    padding:1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 400;
+    color: #ffffff;
+}
+
+header {
+    width: 100%;
+    background: #000000;
+    position: fixed;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transform-origin: .2s;
+}
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #fff;
+    transition: .2s;
+    text-transform: uppercase;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+    color: #aef6ff;
+}
+
+header .logo {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .menu {
+    font-size: 3rem;
+    color: #8ee9fc;
+    cursor: pointer;
+    display: none;
+    transition: .2s;
+}
+
+.home {
+    min-height: 100vh !important;
+    background: linear-gradient(rgba(53, 53, 53, 0.8), rgb(0, 0, 0)), url(../GALERÍA/blues.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+
+.home .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-inline: 10rem;
+    text-align: center;
+    padding-top: 15rem;
+}
+
+.home .content h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #78d1fd;
+    padding:  0 6rem;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.home .content p {
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 2rem 18rem;
+    text-transform: none;
+}
+
+.button {
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px; 
+    text-decoration: none;
+    justify-content: center; 
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: #aef6ff;
+    color: #000000;
+    font-size: 2rem;
+    transition: .3s; 
+    cursor: pointer;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
+    border: .2rem solid #aef6ff;  
+    align-items: center;    
+    gap: 1rem;      
+    width: 20%; 
+    display: flex;  
+    float: none !important;
+    position: relative; 
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 2rem !important;
+    
+}
+
+.button:hover {
+    background: none;
+    border: .2rem solid #aef6ff;
+    color: #aef6ff;
+}
+
+.button i {
+    width: 2rem;  
+    height: 2rem;
+    display: inline-block;
+}
+
+.home .content button:hover {
+    background: none;
+    border: .2rem solid #aef6ff;
+}
+
+.course .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    justify-items: center;
+    padding: 4rem 9%;
+}
+
+.course .box-container .box {
+    background: #060606;
+    height: auto;    
+    width: 100%; 
+    max-width: 32rem;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;    
+    padding-bottom: 1.5rem;
+}
+
+.course .box-container .box .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    background: #000;
+}
+
+.course .box-container .box .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.course .box-container .box h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px 15px 5px 15px;
+    color: #ffffff;
+}
+
+.course .box-container .box p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: none;
+}
+
+.review {
+    height: 80rem;
+    background: #212121; 
+    padding-top: 1rem;  
+    padding-bottom: 1rem
+}
+
+.review h1 {
+    font-size: 4rem;
+    color: #a9f9ff;
+    text-align: center;
+    padding: 6rem 1rem 0 0;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.review h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem 1rem 0 0;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.review .box-container .box {
+    width: 28rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0 .3rem 5rem rgba(53, 53, 53, 0.3);
+    background: #5d5d5d;
+    margin: 4rem 2rem;
+}
+
+.review .box-container .box img {
+    height: 8.5rem;
+    width: 8.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -4rem;
+    border: .6rem solid #78d1fd;
+    border-left: .6rem solid #aef6ff;
+    border-bottom: .6rem solid #aef6ff;
+}
+
+.review .box-container .box h1 {
+    font-size: 4rem;
+    color: #78d1fd;
+    padding: 10px;
+}
+
+.review .box-container .box h3 {
+    padding:1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 400;
+    color: #ffffff;
+}
+
+.review .box-container .box p {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1.3rem .1rem;
+    text-transform: none;
+}
+
+.review .box-container .box .star {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    text-align: center;      
+    gap: 0.5rem;
+    margin: 1rem 0;
+    float: none !important; 
+}
+
+.review .box-container .box .star i,
+.review .box-container .box .star svg {
+    display: inline-block !important; 
+    font-size: 1.6rem;
+    color: #78d1fd;
+    padding: 0.5rem; 
+}
+
+.contact {
+    background: #000000;
+}
+
+.contact h3 {
+    padding:1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 400;
+    color: #ffffff;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.contact .row .form-container {
+    width: 50%;
+    padding-right: 6rem;
+}
+
+.contact .row .form-container input, textarea {
+    height: 4rem;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    color: #78d1fd;
+    font-size: 1.7rem;
+    transition: .2s linear;
+}
+
+.contact .row .form-container input:focus, textarea:focus {
+    border:0.5rem solid #78fbfd;
+}
+
+.contact .row .form-container textarea {
+    height: 20rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.contact .row .form-container input[type="submit"] {
+    height: 5rem;
+    width: 17rem;
+    background: #78d1fd;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s;
+}
+
+.contact .row .form-container input[type="submit"]:hover {
+    background: none;
+    color: #78d1fd;
+    border: .2rem solid #78d1fd;
+}
+
+.box-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.box-link:hover h3 {
+    color: #ff3333;
+    transition: color 0.3s ease;
+}
+
+.footer {
+    background: #111; 
+    padding: 5rem 9%;
+    border-top: .2rem solid #a9f9ff;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #aaa;
+    line-height: 2;
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.footer .box-container .box a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    transition: .3s ease;
+}
+
+.footer .box-container .box a:hover {
+    color: #a9f9ff;
+    padding-left: 1rem; 
+}
+
+.footer .box-container .box a i,
+.footer .box-container .box a svg {
+    width: 2rem !important;
+    height: 2rem !important;
+    color: #ffd8a9;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
+    border-top: .1rem solid rgba(255,255,255,.1);
+}
+
+.footer .credit span {
+    color: #a9f9ff;
+    text-shadow: 0 0 1rem rgba(169, 249, 255, 0.5); 
+}
