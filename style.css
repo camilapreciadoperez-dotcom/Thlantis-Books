@@ -64,7 +64,7 @@ body {
     justify-self: center;
     align-items: center;
     min-height: 100vh !important;
-    background: url(./GALERÍA/tlhgris.jpg) no-repeat center;
+    background: url(../GALERÍA/tlhgris.jpg) no-repeat center;
     background-size: cover;
 }
 
