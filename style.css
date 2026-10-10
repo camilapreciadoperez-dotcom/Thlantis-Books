@@ -265,6 +265,87 @@ p {
  border-top: .1rem solid rgba(255,255,255,.1);
 }
 
+@media (max-width: 768px) {
+    
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.hamburger-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fcf3f3;
+    width: 100%;
+
+}
+
+.nav-ul li {
+    margin: 12px 0;
+}
+
+.hero-container, .main-banner {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-container h1, main-tittle {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-container h1, .main-tittle {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-container p, .main-description {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto 25px auto;
+    color:#fcfafa
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.hero-buttons a, .hero-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+@media (width: 768px) {
+    .hamburger-btn {
+        display: none;
+    }
+}
+}
+
 
 
 
