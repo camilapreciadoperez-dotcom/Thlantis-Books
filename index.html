@@ -10,15 +10,6 @@
     <title>THLANTIS BOOKS</title>
 </head>
 
-<script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navbar = document.querySelector('.navbar ul');
-
-    menuToggle.addEventListener('click', () => {
-        navbar.classList.toggle('show');
-    });
-</script>
-
 <body>
 
     <div class="head">
@@ -26,18 +17,18 @@
             <a href="index.html">THLANTIS</a>
         </div>
         <nav class="navbar">
-
-            <button class="menu-toggle" id="menu-toggle">
+            <!-- Botón de menú hamburguesa corregido con su etiqueta de cierre -->
+            <button class="menu-toggle hamburger-btn" id="menu-toggle" aria-label="Abrir menú">
                 <i data-lucide="menu"></i>
-
+            </button>
 
             <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="VIDEOS/VÍDEOS.html">Videos</a></li>
-                    <li><a href="AUDIOLIBROS/Index.html">Audiolibros</a></li>
-                    <li><a href="AUTORES/Index.html">Autores</a></li>
-                    <li><a href="BLOG/index.html">Blog</a></li>
-                    <li><a href="CONTACTO/index.html">Nosotros</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="VIDEOS/VÍDEOS.html">Videos</a></li>
+                <li><a href="AUDIOLIBROS/Index.html">Audiolibros</a></li>
+                <li><a href="AUTORES/Index.html">Autores</a></li>
+                <li><a href="BLOG/index.html">Blog</a></li>
+                <li><a href="CONTACTO/index.html">Nosotros</a></li>
             </ul>
         </nav>
     </div>
@@ -117,12 +108,20 @@
         </article>
 
         <div class="credit"> Creado por <span>Camila Preciado</span> | © 2026 Todos los derechos reservados </div>
-
-
     </section>
 
+    <!-- Scripts agrupados y ordenados al final -->
     <script>
+        // Inicializar iconos de Lucide
         lucide.createIcons();
+
+        // Funcionalidad del menú hamburguesa
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarUl = document.querySelector('.navbar ul');
+
+        menuToggle.addEventListener('click', () => {
+            navbarUl.classList.toggle('active');
+        });
     </script>
 </body>
 
