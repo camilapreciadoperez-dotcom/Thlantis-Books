@@ -3,132 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Web Media Estudio & Thlantis Books</title>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <title>Thlantis - Nosotros</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="header-nosotros">
-        <div class="menu container">
-            <label for="menu">
-            
-            <nav class="navbar">
-                <ul>
-                    <a href="../index.html" class="logo">THLANTIS</a>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../VIDEOS/VÍDEOS.html">Videos</a></li>
-                    <li><a href="../BLOG/index.html">Blog</a></li>
-                    <li><a href="../AUTORES/Index.html">Autores</a></li>
-                    <li><a href="../CONTACTO/index.html" class="active">Nosotros</a></li>
-                </ul>
-            </nav>
+    <header class="head">
+        <div class="logo">
+            <a href="../index.html">WEB MEDIA ESTUDIO</a>
         </div>
-
-        <div class="header-content container text-center">
-            <h1 class="title-red">NOSOTROS</h1>
-            <p class="subtitle-gray">Ánclate a la lectura. Un espacio transmedia dedicado a explorar las historias, autores y folclor que definen la literatura universal.</p>
-            <a href="../HOME/index.html" class="btn-dark"><i data-lucide="feather"></i> Saber más</a>
-        </div>  
+        <nav class="navbar">
+            <button class="hamburger-btn" id="menu-toggle" aria-label="Abrir menú">
+                <i data-lucide="menu"></i>
+            </button>
+            <ul id="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../VIDEOS/VÍDEOS.html">Videos</a></li>
+                <li><a href="../AUDIOLIBROS/Index.html">Audiolibros</a></li>
+                <li><a href="../AUTORES/Index.html">Autores</a></li>
+                <li><a href="../BLOG/index.html">Blog</a></li>
+                <li><a href="../CONTACTO/index.html" class="active">Servicios / Nosotros</a></li>
+            </ul>
+        </nav>
     </header>
 
-   
-    <main id="info-detail" class="section-light">
-        <div class="container split-container">
-            <div class="split-text">
-                <span class="section-tag">NOSOTROS</span>
-                <h2>Explorando nuevos horizontes literarios</h2>
-                <p>Thlantis nace como un proyecto transmedia diseñado para incentivar el interés local por la lectura, la escritura y el análisis profundo de obras clásicas y géneros contemporáneos.</p>
-                <p>Conectamos diferentes formatos digitales para ofrecerte una experiencia literaria completa, desde artículos web minuciosos hasta contenido audiovisual dinámico.</p>
-                <a href="../BLOG/index.html" class="btn-blue"><i data-lucide="book-open"></i> Saber más</a>
-            </div>
-            <div class="split-image">
-                
-                <img src="../GALERÍA/libros-flotantes.png" alt="Libros Thlantis" onerror="this.src='https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=600&auto=format&fit=crop'">
-            </div>
+    <section class="hero-studio">
+        <span class="badge">E-Commerce & Desarrollo Web</span>
+        <h1>Impulsamos Tu Presencia Digital y Proyectos Literarios</h1>
+        <p>En Web Media Estudio diseñamos software, plataformas e-commerce y aplicaciones a medida. Somos la fuerza tecnológica e impulsora detrás del ecosistema de divulgación cultural Thlantis Books.</p>
+        <div class="hero-actions">
+            <a href="#servicios" class="btn btn-primary"><i data-lucide="layout"></i> Ver Servicios</a>
+            <a href="#contacto" class="btn btn-secondary"><i data-lucide="message-square"></i> Contáctanos</a>
         </div>
-    </main>
+    </section>
 
-   
-    <section class="section-light border-top">
-        <div class="container text-center">
-            <span class="section-tag">ENCUÉNTRANOS:</span>
-            <h2 class="dark-title">REDES SOCIALES</h2>
-            
-            <div class="social-grid">
-                
-                <div class="social-card">
-                    <div class="social-circle">
-                        <i data-lucide="heart"></i>
-                    </div>
-                    <h3>Instagram</h3>
-                    <p>Síguenos para ver datos curiosos, citas literarias y el día a día de la comunidad.</p>
-                    <a href="https://instagram.com" target="_blank" class="btn-sm">Saber más</a>
-                </div>
+    <section id="servicios" class="services-section">
+        <h2 class="section-title">Nuestros Servicios E-Commerce & Software</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i data-lucide="code-2" class="service-icon"></i>
+                <h3>Desarrollo Web & Software</h3>
+                <p>Sitios dinámicos, plataformas educativas y software a la medida creados con arquitectura moderna, rápida y adaptable a móviles.</p>
+                <span class="price-tag">Desde $350 USD</span>
+                <a href="#contacto" class="btn-card">Cotizar Servicio</a>
+            </div>
 
-                
-                <div class="social-card">
-                    <div class="social-circle">
-                        <i data-lucide="play"></i>
-                    </div>
-                    <h3>YouTube</h3>
-                    <p>Análisis en video, resúmenes góticos, biografías y especiales de literatura transmedia.</p>
-                    <a href="https://youtube.com" target="_blank" class="btn-sm">Saber más</a>
-                </div>
+            <div class="service-card">
+                <i data-lucide="shopping-cart" class="service-icon"></i>
+                <h3>Tiendas Virtuales & E-Commerce</h3>
+                <p>Creación de tiendas online para venta de libros, productos digitales o físicos con pasarelas de pago e inventario integrado.</p>
+                <span class="price-tag">Desde $500 USD</span>
+                <a href="#contacto" class="btn-card">Cotizar Servicio</a>
+            </div>
 
-               
-                <div class="social-card">
-                    <div class="social-circle">
-                        <i data-lucide="audio-lines"></i>
-                    </div>
-                    <h3>Spotify</h3>
-                    <p>Escucha nuestros episodios especiales y audiolibros analizados en formato podcast.</p>
-                    <a href="https://spotify.com" target="_blank" class="btn-sm">Saber más</a>
-                </div>
+            <div class="service-card highlight">
+                <i data-lucide="book-open-check" class="service-icon"></i>
+                <h3>Impulso Cultural Thlantis</h3>
+                <p>Plataforma de divulgación, creación de audiolibros, digitalización de obras e impulso a autores independientes.</p>
+                <span class="price-tag">Suscripción / Alianza</span>
+                <a href="#contacto" class="btn-card">Unirme al Proyecto</a>
             </div>
         </div>
     </section>
 
-   
-    <section class="section-light border-top">
-        <div class="container split-container">
-            <div class="mockup-container">
-                <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <span class="phone-tag">VIDEO</span>
-                        <div class="phone-circle"></div>
-                        <div class="phone-bar"></div>
-                        <div class="phone-bar short"></div>
-                    </div>
-                </div>
+    <section id="contacto" class="contact-section">
+        <h2 class="section-title">Contáctanos / Solicita una Cotización</h2>
+        <p>Déjanos tu mensaje para impulsar tu proyecto de software o unirte a la red literaria Thlantis.</p>
+        
+        <form class="ecommerce-form" onsubmit="event.preventDefault(); alert('Mensaje enviado con éxito');">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
             </div>
-            
-            <div class="split-text text-center-mobile">
-                <span class="section-tag">WEB</span>
-                <h2 class="dark-title">VISITA LA WEB</h2>
-                <p>Navega a través de nuestros diferentes nodos de contenido y sumérgete en nuestras investigaciones exclusivas.</p>
-                <a href="../index.html" class="web-link">https://thlantisbooks.github.io/home</a>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" placeholder="correo@ejemplo.com" required>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="servicio">Servicio de Interés</label>
+                <select id="servicio" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="software">Desarrollo de Software / Web</option>
+                    <option value="ecommerce">Tienda Virtual E-Commerce</option>
+                    <option value="thlantis">Divulgación Literaria en Thlantis</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Detalles del Proyecto</label>
+                <textarea id="mensaje" rows="4" placeholder="Describe brevemente tus requerimientos..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit"><i data-lucide="send"></i> Enviar Solicitud</button>
+        </form>
     </section>
 
-   
-    <footer class="footer-dark">
-        <div class="container footer-flex">
-            <div class="footer-info-left">
-                <span class="footer-tag">WEB</span>
-                <h3>VISITA LA WEB</h3>
-                <p>Tu punto de anclaje para la literatura universal.</p>
-            </div>
-            <div class="footer-buttons">
-                <a href="mailto:contacto@thlantis.com" class="btn-footer"><i data-lucide="mail"></i> Contactos</a>
-                <a href="https://wa.me/#" target="_blank" class="btn-footer"><i data-lucide="message-circle"></i> Contactos</a>
-            </div>
-        </div>
+    <footer class="footer">
+        <div class="credit">Creado por <span>Camila Preciado - Web Media Estudio</span> | © 2026 Todos los derechos reservados</div>
     </footer>
 
     <script>
         lucide.createIcons();
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            document.getElementById('nav-list').classList.toggle('active');
+        });
     </script>
 </body>
 </html>
