@@ -2,72 +2,171 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Thlantis - Libros y Cultura</title>
     <link rel="stylesheet" href="style.css">
-    <title>THLANTIS BOOKS</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header class="head">
-        <div class="logo">
-            <a href="index.html">THLANTIS</a>
-        </div>
-        <nav class="navbar">
+
+    <header class="main-header">
+        <div class="menu container">
+            <div class="brand-logo">
+                <span class="logo-crece">Thlantis</span>
+                <span class="logo-colnodo">Books</span>
+            </div>
+
             <button class="hamburger-btn" id="menu-toggle" aria-label="Abrir menú">
-                <i data-lucide="menu"></i>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
             </button>
-            <ul id="nav-list">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="VIDEOS/VÍDEOS.html">Videos</a></li>
-                <li><a href="AUDIOLIBROS/Index.html">Audiolibros</a></li>
-                <li><a href="AUTORES/Index.html">Autores</a></li>
-                <li><a href="BLOG/index.html">Blog</a></li>
-                <li><a href="CONTACTO/index.html">Nosotros</a></li>
-            </ul>
-        </nav>
+
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="VIDEOS/VÍDEOS.html">Videos</a></li>
+                    <li><a href="AUDIOLIBROS/Index.html">Audiolibros</a></li>
+                    <li><a href="AUTORES/Index.html">Autores</a></li>
+                    <li><a href="BLOG/index.html">Blog</a></li>
+                    <li><a href="#comunidad">Comunidad</a></li>
+                    <li><a href="CONTACTO/index.html">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="content header">
-        <h1 class="title1">THLANTIS BOOKS</h1>
-        <p>En la superficie, el mundo es ruido. Pero aquí, en las profundidades de Thlantis, el silencio solo se rompe por el pasar de las páginas. Hemos rescatado del abismo los relatos más poderosos para ofrecerte una experiencia literaria que va más allá de la simple lectura.</p>
-        <div class="btn-home">
-            <a href="VIDEOS/VÍDEOS.html" class="btn"><i data-lucide="feather"></i>Saber más</a>
-            <a href="AUTORES/Index.html" class="btn"><i data-lucide="feather"></i>Autores</a>
+    <main class="chapters-container container">
+        <div class="general-txt">
+            <h2>Artículos sobre literatura dentro y fuera de Colombia</h2>
+            <p>Un análisis profundo sobre la evolución, los cambios, los libros y los autores de antes y ahora.</p>
+        </div>
+
+        <div class="chapters-carousel">
+            <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/caratula.Borges.jpg');">
+                <div class="card-hatsu-content">
+                    <h3>1. El paradigma abstracto de Kafka y Borges</h3>
+                    <p>Nos habla sobre la forma en que Jorge Luis Borges veía e interpretaba la singularidad en los personajes y situaciones de la obra de Kafka.</p>
+                </div>
+                <a href="BLOG/Art.Borges/index.html" class="hatsu-add-btn" aria-label="Leer más">
+                    <i data-lucide="plus"></i>
+                </a>
+            </article>
+
+            <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/Caratula.20000Leguas.jpg');">
+                <div class="card-hatsu-content">
+                    <h3>2. Veinte Mil Leguas de Viaje Submarino</h3>
+                    <p>Publicada en 1870 por Julio Verne, una obra que ha cautivado a lectores por su visión futurista y fascinantes aventuras submarinas.</p>
+                </div>
+                <a href="BLOG/Art.Leguas/index.html" class="hatsu-add-btn" aria-label="Leer más">
+                    <i data-lucide="plus"></i>
+                </a>
+            </article>
+
+            <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/caratula.Blanca Nieves.jpeg');">
+                <div class="card-hatsu-content">
+                    <h3>3. Historia de Blanca Nieves</h3>
+                    <p>Un análisis cultural sobre Blanca Nieves de los Hermanos Grimm y qué hay más allá de este ícono popular.</p>
+                </div>
+                <a href="BLOG/Art.Blanca/index.html" class="hatsu-add-btn" aria-label="Leer más">
+                    <i data-lucide="plus"></i>
+                </a>
+            </article>
+
+            <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/caratula F.K.jpeg');">
+                <div class="card-hatsu-content">
+                    <h3>4. Folk Horror Latinoamericano</h3>
+                    <p>Un recorrido por el subgénero del terror autóctono en la literatura y cine de nuestra región.</p>
+                </div>
+                <a href="BLOG/Art.FolkH/index.html" class="hatsu-add-btn" aria-label="Leer más">
+                    <i data-lucide="plus"></i>
+                </a>
+            </article>
+
+            <div class="card-hatsu-more">
+                <div class="card-more-content">
+                    <h3>¿Quieres leer el ensayo completo?</h3>
+                    <a href="BLOG/folk-horror-completo.html" class="hatsu-more-btn">
+                        Leer Artículo <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-progress-bar">
+            <div class="carousel-progress-fill"></div>
+        </div>
+    </main>
+
+    <section class="community-section container" id="comunidad">
+        <div class="general-txt">
+            <h2>Comunidad Thlantis</h2>
+            <p>Espacio de interacción, debate y difusión para apasionados de la lectura y el análisis literario.</p>
+        </div>
+
+        <div class="community-grid">
+            <div class="community-card">
+                <div class="community-icon"><i data-lucide="users"></i></div>
+                <h3>Lectores & Debate</h3>
+                <p>Participa en discusiones abiertas sobre análisis de obras clásicas y contemporáneas.</p>
+            </div>
+            <div class="community-card">
+                <div class="community-icon"><i data-lucide="message-circle"></i></div>
+                <h3>Foro de Opinión</h3>
+                <p>Intercambia opiniones y recomendaciones con otros miembros de la comunidad Thlantis.</p>
+            </div>
+            <div class="community-card">
+                <div class="community-icon"><i data-lucide="book-open"></i></div>
+                <h3>Difusión Literaria</h3>
+                <p>Espacio dedicado a dar voz a nuevos análisis, textos e investigaciones culturales.</p>
+            </div>
         </div>
     </section>
 
-    <section class="content sau">
-        <h2 class="title">VÍDEOS</h2>
-        <p>Luces, sombras y narrativas en movimiento. Dale play a nuestra curaduría visual y descubre las atmósferas que inspiraron cada capítulo.</p>
-        <div class="box-container">
-            <div class="box">
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/kFcnifsFBEQ?si=kNpHvhsV4wheU1s1&controls=1&modestbranding=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <h3>VIDEO</h3>
-                <p>Buscaba un monstruo marino y termino a veinte mil leguas de viaje submarino</p>
+    <footer class="footer-colnodo">
+        <div class="container footer-content-colnodo">
+            <h4>Conoce más de Thlantis</h4>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
             </div>
-            <div class="box">
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/75QpZQpwYd0?si=QF2IS8Jbnw-7VSRM&controls=1&modestbranding=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+            <div class="contact-details">
+                <div class="contact-line">
+                    <i data-lucide="phone"></i>
+                    <span>+57 316 0424134</span>
                 </div>
-                <h3>VIDEO</h3>
-                <p>Blanca Nieves, resumen y curiosidades del cuento de los hermanos Grimm</p>
+                <div class="contact-line">
+                    <i data-lucide="mail"></i>
+                    <a href="mailto:crececongoogle@colnodo.apc.org">contacto@thlantisbooks.org</a>
+                </div>
+                <div class="contact-line">
+                    <i data-lucide="info"></i>
+                    <a href="#">Políticas de privacidad</a>
+                </div>
+            </div>
+
+            <div class="footer-brands">
+                <span class="brand-text-main">THLANTIS</span>
+                <span class="brand-text-sub">Books</span>
+            </div>
+
+            <div class="credit">
+                Creado por <span>Camila Preciado</span> | © 2026 Todos los derechos reservados
             </div>
         </div>
-    </section>
-
-    <footer class="footer">
-        <div class="credit"> Creado por <span>Camila Preciado</span> | © 2026 Todos los derechos reservados </div>
     </footer>
 
     <script>
         lucide.createIcons();
         const menuToggle = document.getElementById('menu-toggle');
-        const navList = document.getElementById('nav-list');
+        const navbar = document.getElementById('navbar');
         menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('active');
+            navbar.classList.toggle('active');
         });
     </script>
 </body>

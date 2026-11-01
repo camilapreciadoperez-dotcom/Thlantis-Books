@@ -2,144 +2,414 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-    text-align: center;
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    min-height: 100vh;
-    background-color: #000000;
-    color: #ffffff;
-    overflow-x: hidden;
-}
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 64px;
-    padding: 0 20px;
-    background: #000000;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.logo a {
     text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-}
-.hamburger-btn {
-    display: none;
-    background: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    min-width: 44px;
-    min-height: 44px;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.navbar ul {
-    display: flex;
     list-style: none;
 }
-.navbar ul li a {
-    display: block;
-    padding: 14px 18px;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 600;
-}
-.header {
-    min-height: 100vh;
-    padding: 120px 20px 60px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.7), #000000), url("GALERÍA/tlhgris.jpg") no-repeat center/cover;
-}
-.title1 {
-    color: #ff0000;
-    font-size: clamp(2rem, 6vw, 3rem);
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-p {
-    font-size: 1rem;
+
+body {
+    background-color: #070707;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: #dddddd;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-}
-.btn-home {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-height: 48px;
-    padding: 12px 30px;
-    border: 2px solid #a4f4ff;
-    color: #000000;
-    text-decoration: none;
-    background: #a4f4ff;
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 15px;
-}
-.box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-.box {
-    background: #1a1a1a;
-    border-radius: 12px;
-    overflow: hidden;
-    padding-bottom: 20px;
-}
-.video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-}
-.video-wrapper iframe {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+    overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
-    .hamburger-btn { display: flex; align-items: center; justify-content: center; }
-    .navbar ul {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.main-header {
+    background-color: #ffffff;
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo-crece {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo-colnodo {
+    color: #ea4335;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.hamburger-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    padding: 0;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 2px;
+    background-color: #555555;
+    border-radius: 2px;
+}
+
+.navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -16px;
+    right: -16px;
+    background-color: #ffffff;
+    padding: 16px 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    border-top: 1px solid #eeeeee;
+}
+
+.navbar.active {
+    display: block;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar ul li a {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    padding: 12px 24px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    color: #ea4335;
+    background-color: #fafafa;
+}
+
+.chapters-container {
+    padding: 30px 16px;
+}
+
+.general-txt h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+.general-txt p {
+    font-size: 14px;
+    color: #aaaaaa;
+    margin-bottom: 24px;
+}
+
+.chapters-carousel {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px 0 20px 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.chapters-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card-hatsu {
+    flex: 0 0 280px;
+    height: 400px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    scroll-snap-align: start;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-hatsu-content {
+    z-index: 2;
+    padding-right: 40px;
+}
+
+.card-hatsu-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.card-hatsu-content p {
+    font-size: 12.5px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.hatsu-add-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    color: #ffffff;
+}
+
+.card-hatsu-more {
+    flex: 0 0 240px;
+    height: 400px;
+    background-color: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.card-more-content h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.hatsu-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+.carousel-progress-bar {
+    width: 120px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 15px auto 0 auto;
+    border-radius: 2px;
+}
+
+.carousel-progress-fill {
+    width: 30%;
+    height: 100%;
+    background-color: #ff3333;
+    border-radius: 2px;
+}
+
+.community-section {
+    padding: 30px 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.community-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.community-card {
+    background-color: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.community-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(234, 67, 53, 0.15);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ea4335;
+    margin-bottom: 4px;
+}
+
+.community-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.community-card p {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+.footer-colnodo {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 32px 16px 20px 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-content-colnodo h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #dddddd;
+    margin-bottom: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    color: #1c1c1c;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a svg {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13.5px;
+    color: #cccccc;
+}
+
+.contact-line svg {
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+}
+
+.contact-line a {
+    color: #cccccc;
+}
+
+.footer-brands {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 16px;
+}
+
+.brand-text-main {
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.brand-text-sub {
+    font-size: 18px;
+    font-weight: 800;
+    color: #ea4335;
+}
+
+.credit {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #777777;
+}
+
+.credit span {
+    color: #a4f4ff;
+}
+
+@media (min-width: 769px) {
+    .hamburger-btn {
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%; left: 0; width: 100%;
-        background: #000000;
-        padding: 15px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
     }
-    .navbar ul.active { display: flex; }
+
+    .navbar {
+        display: block;
+        position: static;
+        background: transparent;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
     .navbar ul li a {
-        padding: 14px 20px;
-        min-height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        border-bottom: none;
+        padding: 8px 12px;
     }
-    .btn-home { flex-direction: column; width: 100%; max-width: 300px; }
-    .btn { width: 100%; }
+
+    .general-txt h2 {
+        font-size: 32px;
+    }
+
+    .community-grid {
+        flex-direction: row;
+    }
+
+    .community-card {
+        flex: 1;
+    }
 }
