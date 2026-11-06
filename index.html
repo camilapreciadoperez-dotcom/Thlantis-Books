@@ -9,7 +9,7 @@
 </head>
 <body>
 
-   
+    
     <header class="main-header">
         <div class="menu container">
             <div class="brand-logo">
@@ -44,12 +44,98 @@
             <p class="hero-subtitle">Descubre ensayos profundos, audiolibros interactivos, biografías de autores clásicos y video-análisis sobre las grandes obras de la literatura universal.</p>
             <div class="hero-buttons">
                 <a href="#articulos" class="btn-primary">Explorar Artículos <i data-lucide="book-open"></i></a>
-                <a href="VIDEOS/VÍDEOS.html" class="btn-secondary">Ver Videos <i data-lucide="play-circle"></i></a>
+                <a href="AUDIOLIBROS/Index.html" class="btn-secondary">Escuchar Audiolibros <i data-lucide="headphones"></i></a>
             </div>
         </div>
     </section>
 
-   
+    
+    <section class="community-section container" id="comunidad">
+        <div class="general-txt text-center">
+            <h2>Comunidad Thlantis</h2>
+            <p>Espacio de interacción, debate y difusión para apasionados de la lectura y el análisis literario.</p>
+        </div>
+        <div class="community-grid">
+            <a href="COMUNIDAD/lectores-debate.html" class="community-card-link">
+                <div class="community-card">
+                    <div class="community-icon"><i data-lucide="users"></i></div>
+                    <h3>Lectores & Debate</h3>
+                    <p>Participa en discusiones abiertas sobre análisis de obras clásicas y contemporáneas.</p>
+                </div>
+            </a>
+            <a href="COMUNIDAD/foro-opinion.html" class="community-card-link">
+                <div class="community-card">
+                    <div class="community-icon"><i data-lucide="message-circle"></i></div>
+                    <h3>Foro de Opinión</h3>
+                    <p>Intercambia opiniones y recomendaciones con otros miembros de la comunidad Thlantis.</p>
+                </div>
+            </a>
+            <a href="COMUNIDAD/difusion-literaria.html" class="community-card-link">
+                <div class="community-card">
+                    <div class="community-icon"><i data-lucide="book-open"></i></div>
+                    <h3>Difusión Literaria</h3>
+                    <p>Espacio dedicado a dar voz a nuevos análisis, textos e investigaciones culturales.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    
+    <section class="audiobooks-section container" id="audiolibros">
+        <div class="general-txt">
+            <h2>Audiolibros y Relatos Narrados</h2>
+            <p>Disfruta de narraciones inmersivas y relatos clásicos disponibles en nuestra cuenta oficial de Spotify.</p>
+        </div>
+        <div class="audiobooks-carousel">
+            
+            <article class="audiobook-card">
+                <div class="audiobook-badge">5 min 59 s</div>
+                <div class="audiobook-cover" style="background-image: linear-gradient(to top, rgba(7,7,7,0.9), rgba(7,7,7,0.2)), url('BLOG/Galeriaa/caratula.Sombra.jpeg');">
+                    <div class="audiobook-icon-wrapper">
+                        <i data-lucide="headphones"></i>
+                    </div>
+                </div>
+                <div class="audiobook-info">
+                    <h3>"Sombra", relato de EDGAR ALLAN POE</h3>
+                    <span class="audiobook-author">Thlantisbooks | Edgar Allan Poe</span>
+                    <p>Una noche de tragos, siete amigos y un cadáver, ¿Qué puede salir mal?</p>
+                    <a href="https://open.spotify.com/show/1hBPglaE2lHyz7wVelffWP" target="_blank" class="audiobook-link">
+                        Escuchar en Spotify <i data-lucide="disc"></i>
+                    </a>
+                </div>
+            </article>
+
+            
+            <article class="audiobook-card">
+                <div class="audiobook-badge">7 min 22 s</div>
+                <div class="audiobook-cover" style="background-image: linear-gradient(to top, rgba(7,7,7,0.9), rgba(7,7,7,0.2)), url('BLOG/Galeriaa/caratula.Silencio.jpeg');">
+                    <div class="audiobook-icon-wrapper">
+                        <i data-lucide="headphones"></i>
+                    </div>
+                </div>
+                <div class="audiobook-info">
+                    <h3>"Silencio", relato de EDGAR ALLAN POE</h3>
+                    <span class="audiobook-author">Thlantisbooks | Edgar Allan Poe</span>
+                    <p>El relato de un demonio ante una tumba, no puedes esperar.</p>
+                    <a href="https://open.spotify.com/show/1hBPglaE2lHyz7wVelffWP" target="_blank" class="audiobook-link">
+                        Escuchar en Spotify <i data-lucide="disc"></i>
+                    </a>
+                </div>
+            </article>
+
+            
+            <div class="card-audio-more">
+                <div class="card-more-content">
+                    <h3>¿Quieres escuchar todo nuestro catálogo de relatos?</h3>
+                    <a href="AUDIOLIBROS/Index.html" class="audio-more-btn">
+                        Ir a Audiolibros <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
     <main class="chapters-container container" id="articulos">
         <div class="general-txt">
             <h2>Artículos sobre literatura dentro y fuera de Colombia</h2>
@@ -110,6 +196,7 @@
         </div>
     </main>
 
+    
     <section class="biographies-section container" id="biografias">
         <div class="general-txt">
             <h2>Biografías de Autores Destacados</h2>
@@ -169,13 +256,13 @@
         </div>
     </section>
 
+   
     <section class="videos-banner-section container" id="videos">
         <div class="general-txt">
             <h2>Videos y Contenido Multimedia</h2>
             <p>Análisis en video y contenido audiovisual disponible en nuestro canal oficial de YouTube.</p>
         </div>
         <div class="videos-carousel">
-
             <article class="video-card">
                 <div class="video-thumbnail">
                     <iframe src="https://www.youtube.com/embed/kFcnifsFBEQ" title="SOY ESE/ LA PARADOJA ABSTRACTA DE KAFKA Y BORGES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -187,7 +274,6 @@
                 </div>
             </article>
 
-            
             <article class="video-card">
                 <div class="video-thumbnail">
                     <iframe src="https://www.youtube.com/embed/aRNbrxBq17M" title="¿Blanca Nieves?, resumen y curiosidades del cuento de los hermanos Grimm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -199,7 +285,6 @@
                 </div>
             </article>
 
-            
             <article class="video-card">
                 <div class="video-thumbnail">
                     <iframe src="https://www.youtube.com/embed/ibfqEmIHzYc" title="Veinte mil leguas de Viaje Submarino. Resumen y curiosidades del libro de Jules Verne" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -211,7 +296,6 @@
                 </div>
             </article>
 
-            
             <div class="card-video-more">
                 <div class="card-more-content">
                     <h3>¿Quieres ver todo nuestro catálogo audiovisual?</h3>
@@ -224,37 +308,6 @@
     </section>
 
     
-    <section class="community-section container" id="comunidad">
-        <div class="general-txt text-center">
-            <h2>Comunidad Thlantis</h2>
-            <p>Espacio de interacción, debate y difusión para apasionados de la lectura y el análisis literario.</p>
-        </div>
-        <div class="community-grid">
-            <a href="COMUNIDAD/lectores-debate.html" class="community-card-link">
-                <div class="community-card">
-                    <div class="community-icon"><i data-lucide="users"></i></div>
-                    <h3>Lectores & Debate</h3>
-                    <p>Participa en discusiones abiertas sobre análisis de obras clásicas y contemporáneas.</p>
-                </div>
-            </a>
-            <a href="COMUNIDAD/foro-opinion.html" class="community-card-link">
-                <div class="community-card">
-                    <div class="community-icon"><i data-lucide="message-circle"></i></div>
-                    <h3>Foro de Opinión</h3>
-                    <p>Intercambia opiniones y recomendaciones con otros miembros de la comunidad Thlantis.</p>
-                </div>
-            </a>
-            <a href="COMUNIDAD/difusion-literaria.html" class="community-card-link">
-                <div class="community-card">
-                    <div class="community-icon"><i data-lucide="book-open"></i></div>
-                    <h3>Difusión Literaria</h3>
-                    <p>Espacio dedicado a dar voz a nuevos análisis, textos e investigaciones culturales.</p>
-                </div>
-            </a>
-        </div>
-    </section>
-
-   
     <footer class="footer-colnodo">
         <div class="container footer-content-colnodo">
             <h4>Conoce más de Thlantis</h4>
