@@ -1,220 +1,203 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thlantis - Libros y Cultura</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
+<header class="main-header">
+    <div class="menu container">
+        <div class="brand-logo">
+            <span class="logo-crece">Thlantis</span>
+            <span class="logo-colnodo">Books</span>
+        </div>
+        <button class="hamburger-btn" id="menu-toggle" aria-label="Abrir menú">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="VIDEOS/VÍDEOS.html">Videos</a></li>
+                <li><a href="AUDIOLIBROS/Index.html">Audiolibros</a></li>
+                <li><a href="AUTORES/Index.html">Autores</a></li>
+                <li><a href="BLOG/index.html">Blog</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="CONTACTO/index.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-   
-    <header class="main-header">
-        <div class="menu container">
-            <div class="brand-logo">
-                <span class="logo-crece">Thlantis</span>
-                <span class="logo-colnodo">Books</span>
+<!-- SECCIÓN PRINCIPAL: ARTÍCULOS -->
+<main class="chapters-container container">
+    <div class="general-txt">
+        <h2>Artículos sobre literatura dentro y fuera de Colombia</h2>
+        <p>Un análisis profundo sobre la evolución, los cambios, los libros y los autores de antes y ahora.</p>
+    </div>
+    <div class="chapters-carousel">
+        <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/caratula.Borges.jpg');">
+            <div class="card-hatsu-content">
+                <h3>1. El paradigma abstracto de Kafka y Borges</h3>
+                <p>Nos habla sobre la forma en que Jorge Luis Borges veía e interpretaba la singularidad en los personajes y situaciones de la obra de Kafka.</p>
             </div>
-
-            <button class="hamburger-btn" id="menu-toggle" aria-label="Abrir menú">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
-
-            <nav class="navbar" id="navbar">
-                <ul>
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="VIDEOS/VÍDEOS.html">Videos</a></li>
-                    <li><a href="AUDIOLIBROS/Index.html">Audiolibros</a></li>
-                    <li><a href="AUTORES/Index.html">Autores</a></li>
-                    <li><a href="BLOG/index.html">Blog</a></li>
-                    <li><a href="#comunidad">Comunidad</a></li>
-                    <li><a href="CONTACTO/index.html">Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- SECCIÓN PRINCIPAL: ARTÍCULOS -->
-    <main class="chapters-container container">
-        <div class="general-txt">
-            <h2>Artículos sobre literatura dentro y fuera de Colombia</h2>
-            <p>Un análisis profundo sobre la evolución, los cambios, los libros y los autores de antes y ahora.</p>
-        </div>
-
-        <div class="chapters-carousel">
-            <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/caratula.Borges.jpg');">
-                <div class="card-hatsu-content">
-                    <h3>1. El paradigma abstracto de Kafka y Borges</h3>
-                    <p>Nos habla sobre la forma en que Jorge Luis Borges veía e interpretaba la singularidad en los personajes y situaciones de la obra de Kafka.</p>
-                </div>
-                <a href="BLOG/Art.Borges/index.html" class="hatsu-add-btn" aria-label="Leer más">
-                    <i data-lucide="plus"></i>
+            <a href="BLOG/Art.Borges/index.html" class="hatsu-add-btn" aria-label="Leer más">
+                <i data-lucide="plus"></i>
+            </a>
+        </article>
+        <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/Caratula.20000Leguas.jpg');">
+            <div class="card-hatsu-content">
+                <h3>2. Veinte Mil Leguas de Viaje Submarino</h3>
+                <p>Publicada en 1870 por Julio Verne, una obra que ha cautivado a lectores por su visión futurista y fascinantes aventuras submarinas.</p>
+            </div>
+            <a href="BLOG/Art.Leguas/index.html" class="hatsu-add-btn" aria-label="Leer más">
+                <i data-lucide="plus"></i>
+            </a>
+        </article>
+        <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/caratula.Blanca Nieves.jpeg');">
+            <div class="card-hatsu-content">
+                <h3>3. Historia de Blanca Nieves</h3>
+                <p>Un análisis cultural sobre Blanca Nieves de los Hermanos Grimm y qué hay más allá de este ícono popular.</p>
+            </div>
+            <a href="BLOG/Art.Blanca/index.html" class="hatsu-add-btn" aria-label="Leer más">
+                <i data-lucide="plus"></i>
+            </a>
+        </article>
+        <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/caratula F.K.jpeg');">
+            <div class="card-hatsu-content">
+                <h3>4. Folk Horror Latinoamericano</h3>
+                <p>Un recorrido por el subgénero del terror autóctono en la literatura y cine de nuestra región.</p>
+            </div>
+            <a href="BLOG/Art.FolkH/index.html" class="hatsu-add-btn" aria-label="Leer más">
+                <i data-lucide="plus"></i>
+            </a>
+        </article>
+        <div class="card-hatsu-more">
+            <div class="card-more-content">
+                <h3>¿Quieres leer el ensayo completo?</h3>
+                <a href="BLOG/Art.FolkH/index.html" class="hatsu-more-btn">
+                    Leer Artículo <i data-lucide="arrow-right"></i>
                 </a>
-            </article>
-
-            <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/Caratula.20000Leguas.jpg');">
-                <div class="card-hatsu-content">
-                    <h3>2. Veinte Mil Leguas de Viaje Submarino</h3>
-                    <p>Publicada en 1870 por Julio Verne, una obra que ha cautivado a lectores por su visión futurista y fascinantes aventuras submarinas.</p>
-                </div>
-                <a href="BLOG/Art.Leguas/index.html" class="hatsu-add-btn" aria-label="Leer más">
-                    <i data-lucide="plus"></i>
-                </a>
-            </article>
-
-            <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/caratula.Blanca Nieves.jpeg');">
-                <div class="card-hatsu-content">
-                    <h3>3. Historia de Blanca Nieves</h3>
-                    <p>Un análisis cultural sobre Blanca Nieves de los Hermanos Grimm y qué hay más allá de este ícono popular.</p>
-                </div>
-                <a href="BLOG/Art.Blanca/index.html" class="hatsu-add-btn" aria-label="Leer más">
-                    <i data-lucide="plus"></i>
-                </a>
-            </article>
-
-            <article class="card-hatsu" style="background-image: linear-gradient(to top, rgba(7, 7, 7, 0.95), rgba(7, 7, 7, 0.3)), url('BLOG/Galeriaa/caratula F.K.jpeg');">
-                <div class="card-hatsu-content">
-                    <h3>4. Folk Horror Latinoamericano</h3>
-                    <p>Un recorrido por el subgénero del terror autóctono en la literatura y cine de nuestra región.</p>
-                </div>
-                <a href="BLOG/Art.FolkH/index.html" class="hatsu-add-btn" aria-label="Leer más">
-                    <i data-lucide="plus"></i>
-                </a>
-            </article>
-
-            <div class="card-hatsu-more">
-                <div class="card-more-content">
-                    <h3>¿Quieres leer el ensayo completo?</h3>
-                    <a href="BLOG/folk-horror-completo.html" class="hatsu-more-btn">
-                        Leer Artículo <i data-lucide="arrow-right"></i>
-                    </a>
-                </div>
             </div>
         </div>
+    </div>
+    <div class="carousel-progress-bar">
+        <div class="carousel-progress-fill"></div>
+    </div>
+</main>
 
-        <div class="carousel-progress-bar">
-            <div class="carousel-progress-fill"></div>
+<!-- BANNER DE VIDEOS -->
+<section class="videos-banner-section container" id="videos">
+    <div class="general-txt">
+        <h2>Videos y Contenido Multimedia</h2>
+        <p>Análisis en video y contenido audiovisual sobre las obras literarias destacadas del proyecto.</p>
+    </div>
+    <div class="videos-carousel">
+        <article class="video-card">
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/kFcnifsFBEQ" title="Video 1 Thlantis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3>Análisis de Literatura I</h3>
+                <p>Exploración audiovisual sobre las obras destacadas de la plataforma.</p>
+                <a href="VIDEOS/VÍDEOS.html" class="video-link">Ver en sección Videos <i data-lucide="play-circle"></i></a>
+            </div>
+        </article>
+        <article class="video-card">
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/aRNbrxBq17M" title="Video 2 Thlantis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3>Jorge Luis Borges & Franz Kafka</h3>
+                <p>Video-ensayo sobre la perspectiva borgiana de la obra kafkiana.</p>
+                <a href="VIDEOS/VÍDEOS.html" class="video-link">Ver en sección Videos <i data-lucide="play-circle"></i></a>
+            </div>
+        </article>
+        <article class="video-card">
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/ibfqEmIHzYc" title="Video 3 Thlantis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3>Reseñas y Ensayos Audiovisuales</h3>
+                <p>Revisión profunda sobre los conceptos literarios y narrativos.</p>
+                <a href="VIDEOS/VÍDEOS.html" class="video-link">Ver en sección Videos <i data-lucide="play-circle"></i></a>
+            </div>
+        </article>
+
+        <!-- BOTÓN / TARJETA AL FINAL DEL BANNER DE VIDEOS -->
+        <div class="video-card-more">
+            <div class="card-more-content">
+                <h3>¿Quieres ver todo nuestro catálogo audiovisual?</h3>
+                <a href="VIDEOS/VÍDEOS.html" class="hatsu-more-btn">
+                    Ver Más Videos <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
         </div>
-    </main>
+    </div>
+</section>
 
-   
-    <section class="videos-banner-section container" id="videos">
-        <div class="general-txt">
-            <h2>Videos y Contenido Multimedia</h2>
-            <p>Análisis en video y contenido audiovisual sobre las obras literarias destacadas del proyecto.</p>
-        </div>
-
-        <div class="videos-carousel">
-            <article class="video-card">
-                <div class="video-thumbnail">
-                    <iframe src="https://www.youtube.com/embed/fEPDtwWdMlc" title="Análisis Folk Horror Latinoamericano" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video-info">
-                    <h3>Análisis del Folk Horror Latinoamericano</h3>
-                    <p>Exploración audiovisual sobre los mitos y la narrativa de terror en la región.</p>
-                    <a href="VIDEOS/VÍDEOS.html" class="video-link">Ver en sección Videos <i data-lucide="play-circle"></i></a>
-                </div>
-            </article>
-
-            <article class="video-card">
-                <div class="video-thumbnail">
-                    <iframe src="https://www.youtube.com/embed/V0437P75K-U" title="Jorge Luis Borges y Franz Kafka" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video-info">
-                    <h3>Jorge Luis Borges & Franz Kafka</h3>
-                    <p>Video-ensayo sobre la perspectiva borgiana de la obra kafkiana.</p>
-                    <a href="VIDEOS/VÍDEOS.html" class="video-link">Ver en sección Videos <i data-lucide="play-circle"></i></a>
-                </div>
-            </article>
-
-            <article class="video-card">
-                <div class="video-thumbnail">
-                    <iframe src="https://www.youtube.com/embed/m_3zOaBKhF0" title="Veinte Mil Leguas de Viaje Submarino" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video-info">
-                    <h3>Julio Verne: Viaje Submarino</h3>
-                    <p>Revisión profunda del legado de la ciencia ficción y el Capitán Nemo.</p>
-                    <a href="VIDEOS/VÍDEOS.html" class="video-link">Ver en sección Videos <i data-lucide="play-circle"></i></a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    
-    <section class="community-section container" id="comunidad">
-        <div class="general-txt text-center">
-            <h2>Comunidad Thlantis</h2>
-            <p>Espacio de interacción, debate y difusión para apasionados de la lectura y el análisis literario.</p>
-        </div>
-
-        <div class="community-grid">
+<section class="community-section container" id="comunidad">
+    <div class="general-txt text-center">
+        <h2>Comunidad Thlantis</h2>
+        <p>Espacio de interacción, debate y difusión para apasionados de la lectura y el análisis literario.</p>
+    </div>
+    <div class="community-grid">
+        <a href="COMUNIDAD/lectores-debate.html" class="community-card-link">
             <div class="community-card">
                 <div class="community-icon"><i data-lucide="users"></i></div>
                 <h3>Lectores & Debate</h3>
                 <p>Participa en discusiones abiertas sobre análisis de obras clásicas y contemporáneas.</p>
             </div>
+        </a>
+        <a href="COMUNIDAD/foro-opinion.html" class="community-card-link">
             <div class="community-card">
                 <div class="community-icon"><i data-lucide="message-circle"></i></div>
                 <h3>Foro de Opinión</h3>
                 <p>Intercambia opiniones y recomendaciones con otros miembros de la comunidad Thlantis.</p>
             </div>
+        </a>
+        <a href="COMUNIDAD/difusion-literaria.html" class="community-card-link">
             <div class="community-card">
                 <div class="community-icon"><i data-lucide="book-open"></i></div>
                 <h3>Difusión Literaria</h3>
                 <p>Espacio dedicado a dar voz a nuevos análisis, textos e investigaciones culturales.</p>
             </div>
+        </a>
+    </div>
+</section>
+
+<footer class="footer-colnodo">
+    <div class="container footer-content-colnodo">
+        <h4>Conoce más de Thlantis</h4>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
         </div>
-    </section>
-
-    
-    <footer class="footer-colnodo">
-        <div class="container footer-content-colnodo">
-            <h4>Conoce más de Thlantis</h4>
-
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-                <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-                <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+        <div class="contact-details">
+            <div class="contact-line">
+                <i data-lucide="phone"></i>
+                <span>+57 316 0424134</span>
             </div>
-
-            <div class="contact-details">
-                <div class="contact-line">
-                    <i data-lucide="phone"></i>
-                    <span>+57 316 0424134</span>
-                </div>
-                <div class="contact-line">
-                    <i data-lucide="mail"></i>
-                    <a href="mailto:crececongoogle@colnodo.apc.org">contacto@thlantisbooks.org</a>
-                </div>
-                <div class="contact-line">
-                    <i data-lucide="info"></i>
-                    <a href="#">Políticas de privacidad</a>
-                </div>
+            <div class="contact-line">
+                <i data-lucide="mail"></i>
+                <a href="mailto:crececongoogle@colnodo.apc.org">contacto@thlantisbooks.org</a>
             </div>
-
-            <div class="footer-brands">
-                <span class="brand-text-main">THLANTIS</span>
-                <span class="brand-text-sub">Books</span>
-            </div>
-
-            <div class="credit">
-                Creado por <span>Camila Preciado</span> | © 2026 Todos los derechos reservados
+            <div class="contact-line">
+                <i data-lucide="info"></i>
+                <a href="#">Políticas de privacidad</a>
             </div>
         </div>
-    </footer>
-
-    <script>
-        lucide.createIcons();
-        const menuToggle = document.getElementById('menu-toggle');
-        const navbar = document.getElementById('navbar');
-        menuToggle.addEventListener('click', () => {
-            navbar.classList.toggle('active');
-        });
-    </script>
-</body>
-</html>
+        <div class="footer-brands">
+            <span class="brand-text-main">THLANTIS</span>
+            <span class="brand-text-sub">Books</span>
+        </div>
+        <div class="credit">
+            Creado por <span>Camila Preciado</span> | © 2026 Todos los derechos reservados
+        </div>
+    </div>
+</footer>
+<script>
+    lucide.createIcons();
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+    menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
