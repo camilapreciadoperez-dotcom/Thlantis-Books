@@ -119,7 +119,7 @@ body {
 
 .hero-banner {
     position: relative;
-    background: #070707 url('log.jpg') center/cover no-repeat;
+    background: #070707 url('log.png') center/cover no-repeat;
     padding: 90px 16px;
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
